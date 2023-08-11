@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu/MainMenu.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SpyOne/SpyOne.unity
+    guid: 467c70f66db439540ab9bd9faa557497
+  - enabled: 1
+    path: Assets/Scenes/SpyTwo/SpyTwo.unity
+    guid: 3090824e81a65f1469a7f442540ab2fa
+  m_configObjects: {}
