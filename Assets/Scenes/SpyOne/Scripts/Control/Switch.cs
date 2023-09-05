@@ -108,9 +108,7 @@ public class Switch : MonoBehaviour
     }
     public void Next()
     {
-        
         StartCoroutine(ChangeRoom(1));
-        
     }
 
     public void Previus()

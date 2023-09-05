@@ -24,15 +24,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        //para tirar dps
-        if (Input.GetKeyDown(KeyCode.F2))
-        {
-            completedPuzzles.Add(true);
-            completedPuzzles.Add(true);
-            completedPuzzles.Add(true);
-            completedPuzzles.Add(true);
-        }
-        //
         UpdateTimer();
     }
 

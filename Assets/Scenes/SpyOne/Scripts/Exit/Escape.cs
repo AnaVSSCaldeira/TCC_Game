@@ -10,18 +10,8 @@ public class Escape : MonoBehaviour
     [SerializeField] private TextMeshProUGUI victoryText;
     [SerializeField] private TextMeshProUGUI doorText;
     [SerializeField] private BoxCollider2D door;
+    [SerializeField] private BoxCollider2D lockerCollider;
 
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-        //print(GameManager.gameManagerInstance.completedPuzzles[0]);
-        //print(GameManager.gameManagerInstance.completedPuzzles[1]);
-        //print(GameManager.gameManagerInstance.completedPuzzles[2]);
-        //print("--");
-    }
     private void OnMouseDown()
     {
         ConfirmExit();
@@ -29,6 +19,7 @@ public class Escape : MonoBehaviour
 
     private void ConfirmExit()
     {
+        lockerCollider.enabled = false;
         if (Time.timeScale != 0)
         {
             if (GameManager.gameManagerInstance.completedPuzzles.Count == 4)
@@ -56,6 +47,7 @@ public class Escape : MonoBehaviour
 
         }
         door.enabled = true;
+        lockerCollider.enabled = true;
     }
 
 
